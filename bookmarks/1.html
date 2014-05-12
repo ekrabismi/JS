@@ -1,0 +1,10 @@
+<script language="JavaScript" type="text/javascript">
+	
+/* BOOKMARK */
+function bookmark(title, url) {
+  if (document.all) window.external.AddFavorite(url, title);
+  else if (window.sidebar) window.sidebar.addPanel(title, url, "");
+}
+</script>
+
+<a class="footerColorSet1" href="Javascript:bookmark('Google', 'http://www.google.com')">Bookmark us </a>

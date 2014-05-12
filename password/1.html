@@ -1,0 +1,19 @@
+<script src="jquery-1.5.2.min.js"></script>
+<script type="text/javascript">
+
+        function pwdFocus() {
+            $('#fakepassword').hide();
+            $('#password').show();
+            $('#password').focus();
+        }
+
+        function pwdBlur() {
+            if ($('#password').attr('value') == '') {
+                $('#password').hide();
+                $('#fakepassword').show();
+            }
+        }
+    </script>
+
+    <input style="color: #ccc" type="text" name="fakepassword" id="fakepassword" value="Password" onfocus="pwdFocus()" />
+    <input style="display: none" type="password" name="password" id="password" value="" onblur="pwdBlur()" />

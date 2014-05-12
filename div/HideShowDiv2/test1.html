@@ -1,0 +1,40 @@
+<script type="text/javascript">
+        function ToggleMapDisplay() {
+            var oDivHide = document.getElementById("divHide");
+            var oDivShow = document.getElementById("divShow");
+            var oMapFrame = document.getElementById("mapContainer");
+            if (oDivHide.style.display == "none") {
+                oDivHide.style.display = "";
+                oDivShow.style.display = "none";
+                oMapFrame.style.display = "block";
+            }
+            else {
+                oDivHide.style.display = "none";
+                oDivShow.style.display = "";
+                oMapFrame.style.display = "none";
+            }
+        }
+
+
+    </script>
+    
+     <fieldset>
+     
+     <legend id="divHide" style="display: none;">
+			 <a href="javascript:ToggleMapDisplay();" style="text-decoration:none;" title="Hide Map">(-)</a>Options
+     </legend>   
+		
+        <legend id="divShow">
+		  <a href="javascript:ToggleMapDisplay();" style="text-decoration:none;" title="Show Map">(+)</a> Options
+		</legend>
+        
+         <div id="mapContainer" style="float: left; width: 100%; display:none;">
+         
+            
+            This is test
+         
+
+	    </div>
+        
+         </fieldset>
+        

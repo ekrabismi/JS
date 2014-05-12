@@ -1,0 +1,86 @@
+<script src="jquery.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	$(function loop() {
+	    var rand = Math.round(Math.random() * (5000 - 1000)) + 1000;
+	    setTimeout(function() {
+	            $('#listing-long li').last().hide().css({opacity:0}).prependTo('#listing-long').slideDown('slow').animate({opacity:1});
+	            loop();
+	    }, rand);
+	}());
+
+
+</script>
+
+<style>
+.mylist{
+
+	/*border: solid thin #F00;*/
+	height: 100px;
+	overflow: hidden;
+}
+</style>
+
+ <div class="mylist"  > 
+	  	<ul id="listing-long">
+        
+        <li style="display: block; opacity: 1;">
+
+          	
+             111111111111111111111
+
+		  </li>
+          
+          <li style="display: block; opacity: 1;">
+
+          	
+             222222222222222222222
+
+		  </li>
+          
+          
+             <li style="display: block; opacity: 1;">
+
+          	
+            3333333333333333333333333333
+
+		  </li>
+          
+          
+             <li style="display: block; opacity: 1;">
+
+          	
+            44444444444444444444444
+
+		  </li>
+          
+          
+             <li style="display: block; opacity: 1;">
+
+          	
+             5555555555555555555555555
+
+		  </li>
+          
+          
+             <li style="display: block; opacity: 1;">
+
+          	
+            6666666666666666666666666
+
+		  </li>
+          
+          
+             <li style="display: block; opacity: 1;">
+
+          	
+             777777777777777777
+
+		  </li>
+		  
+  
+		  
+		  
+		  </ul>
+     </div>

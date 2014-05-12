@@ -1,0 +1,36 @@
+<script type="text/javascript">
+        function ToggleMapDisplay() {
+            var oDivHide = document.getElementById("divHide");
+            var oDivShow = document.getElementById("divShow");
+            var oMapFrame = document.getElementById("mapContainer");
+            if (oDivHide.style.display == "none") {
+                oDivHide.style.display = "";
+                oDivShow.style.display = "none";
+                oMapFrame.style.display = "block";
+            }
+            else {
+                oDivHide.style.display = "none";
+                oDivShow.style.display = "";
+                oMapFrame.style.display = "none";
+            }
+        }
+
+
+    </script>
+    
+         <div align="right" id="divHide">
+			 <a href="javascript:ToggleMapDisplay();" title="Hide Map">Hide Map</a>
+		 </div>
+		
+         <div id="divShow" style="display: none;" align="right">
+		  <a href="javascript:ToggleMapDisplay();" title="Show Map">Show Map</a>
+		 </div>
+		
+         <div id="mapContainer" style="float: left; width: 100%; display:block;">
+
+            This is hidden / show text.
+
+	    </div>
+    
+    		</div>
+
