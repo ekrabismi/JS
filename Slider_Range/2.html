@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="myslider/jquery-ui.css">
+<script src="myslider/jquery-1.10.2.js"></script>
+<script src="myslider/jquery-ui.js"></script>
+
+<script>
+$(function() {
+$( "#slider-range" ).slider({
+range: true,
+min: 0,
+max: 174990,
+values: [ 0, 174990 ],
+slide: function( event, ui ) {
+
+
+$( "#minPrice" ).val(ui.values[0]);
+$( "#maxPrice" ).val(ui.values[1]);
+}
+});
+
+
+});
+</script>
+
+<div style="width: 250px;">
+<div id="slider-range"></div>
+</div>
+<br /> 
+  Rs.<input type="text" value="%%GLOBAL_MinPriceValue%%" size="6" id="minPrice" />
+   -
+  Rs.<input type="text" value="%%GLOBAL_MaxPriceValue%%" size="6" id="maxPrice" />
+
+  <input type="button" value="Go" onclick="updateUrl();" />
