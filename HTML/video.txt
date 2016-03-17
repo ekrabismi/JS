@@ -1,0 +1,6 @@
+<video width="480" height="320" controls="controls">
+  <source src="<?php echo $myfile ?>" type="video/mp4">
+  <source src="<?php echo $myfile ?>" type="video/ogg">
+  <source src="<?php echo $myfile ?>" type="video/webm">
+  <h1>Your browser doesn't support video tag.</h1>
+</video>
